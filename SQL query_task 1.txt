@@ -1,5 +1,0 @@
-#Task 1
-
-SELECT c."login", COUNT(o."id") 
-FROM "Orders" AS o RIGHT JOIN "Couriers" AS c ON c."id" = o."courierId" AND o."inDelivery" IS true
-GROUP BY c."login";
